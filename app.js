@@ -16,6 +16,7 @@ app.get("/", (req, res) => {
 app.get("/api/info", (req, res) => {
     res.json({
         success: true,
+<<<<<<< HEAD
         message: "Products API branch"
     });
 });
@@ -27,6 +28,19 @@ app.get("/api/products", (req, res) => {
         products: [
             { id: 1, name: "Laptop", price: 55000 },
             { id: 2, name: "Keyboard", price: 1500 }
+=======
+        message: "Users API branch"
+    });
+});
+
+app.get("/api/users", (req, res) => {
+    res.json({
+        success: true,
+        count: 2,
+        users: [
+            { id: 1, name: "Amit", role: "Developer" },
+            { id: 2, name: "Priya", role: "Tester" }
+>>>>>>> feature/products-api
         ]
     });
 });
